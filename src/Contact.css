@@ -1,0 +1,139 @@
+.contact{
+    padding:100px 80px 0;
+    text-align:center;
+    scroll-margin-top:70px;
+
+}
+
+.dark .contact{
+    background:#020617;
+}
+
+.light .contact{
+    background:#f8fafc;
+}
+
+.contact-content{
+    max-width:700px;
+    margin:auto;
+}
+
+.contact-content h1{
+    font-size:50px;
+    margin-bottom:15px;
+}
+
+.dark .contact-content h1{
+    color:white;
+}
+
+.light .contact-content h1{
+    color:#0f172a;
+}
+
+.contact-content > p{
+    font-size:18px;
+    margin-bottom:40px;
+}
+
+.dark .contact-content > p{
+    color:#94a3b8;
+}
+
+.light .contact-content > p{
+    color:#64748b;
+}
+
+.contact-form{
+    display:flex;
+    flex-direction:column;
+    gap:20px;
+}
+
+.contact-form input,
+.contact-form textarea{
+    width:100%;
+    padding:16px 20px;
+    border-radius:10px;
+    border:1px solid #334155;
+    font-size:16px;
+    box-sizing:border-box;
+    outline:none;
+    transition:all .3s ease;
+}
+
+.dark .contact-form input,
+.dark .contact-form textarea{
+    background:#1e293b;
+    color:white;
+}
+
+.light .contact-form input,
+.light .contact-form textarea{
+    background:white;
+    color:#0f172a;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus{
+    border-color:#2563eb;
+    box-shadow:0 0 12px rgba(37,99,235,.3);
+}
+
+.contact-form textarea{
+    resize:vertical;
+}
+
+.contact-form button{
+    padding:16px;
+    border:none;
+    border-radius:10px;
+    background:#2563eb;
+    color:white;
+    font-size:18px;
+    font-weight:600;
+    cursor:pointer;
+}
+
+.footer-bottom{
+    margin-top:80px;
+    padding:25px;
+    border-top:1px solid #334155;
+}
+
+.footer-bottom p{
+    color:#94a3b8;
+    margin:0;
+}
+.contact-ticker{
+    width:100%;
+    overflow:hidden;
+    margin-top:50px;
+    padding:18px 0;
+    white-space:nowrap;
+}
+
+.ticker-content{
+    display:inline-flex;
+    gap:70px;
+    align-items:center;
+    animation:ticker 18s linear infinite;
+}
+
+.ticker-content span{
+    color:rgb(99, 97, 97);
+    font-size:17px;
+    font-weight:600;
+}
+
+@keyframes ticker{
+
+    from{
+        transform:translateX(0);
+    }
+    
+
+    to{
+        transform:translateX(-50%);
+    }
+}
