@@ -82,3 +82,18 @@
     color:white;
     font-size:14px;
 }
+@media (max-width:768px){
+
+.projects{
+    padding:90px 20px;
+}
+
+.project-grid{
+    grid-template-columns:1fr;
+}
+
+.project-card img{
+    height:180px;
+}
+
+}

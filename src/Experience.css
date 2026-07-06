@@ -206,3 +206,31 @@
 .timeline-icon:hover{
     transform:rotate(360deg) scale(1.15);
 }
+@media (max-width:768px){
+
+.experience{
+    padding:90px 20px;
+}
+
+.timeline::before{
+    left:20px;
+}
+
+.timeline-item{
+    gap:20px;
+}
+
+.timeline-content{
+    padding:20px;
+}
+
+.tech-stack{
+    flex-wrap:wrap;
+    gap:20px;
+}
+
+.tech-card{
+    width:150px;
+}
+
+}

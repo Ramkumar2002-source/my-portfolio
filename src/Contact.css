@@ -137,3 +137,19 @@
         transform:translateX(-50%);
     }
 }
+@media (max-width:768px){
+
+.contact{
+    padding:80px 20px;
+}
+
+.contact-form input,
+.contact-form textarea{
+    width:100%;
+}
+
+.contact-form button{
+    width:100%;
+}
+
+}

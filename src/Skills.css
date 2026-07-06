@@ -122,3 +122,22 @@
     background:linear-gradient(90deg,#38bdf8,#2563eb);
     border-radius:20px;
 }
+@media (max-width:768px){
+
+.skills{
+    padding:90px 20px;
+}
+
+.skills-title{
+    font-size:38px;
+}
+
+.skills-grid{
+    grid-template-columns:1fr;
+}
+
+.skill-box{
+    padding:20px;
+}
+
+}
