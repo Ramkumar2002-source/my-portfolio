@@ -131,9 +131,6 @@ function Contact() {
   <p>© 2026 Ramkumar. Built with React.</p>
 </div>
 
-      <div className="footer-bottom">
-        <p>© 2026 Ramkumar. Built with React.</p>
-      </div>
     </footer>
   );
 }
