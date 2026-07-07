@@ -19,12 +19,12 @@ function Skills() {
     { icon: <FaDatabase />, name: "SQL & Database Management", level: "90%" },
     { icon: <FaDatabase />, name: "Database Joins & Views", level: "85%" },
     { icon: <FaCode />, name: "Stored Procedures & Subqueries", level: "80%" },
-    { icon: <FaServer />, name: "Backup & Restore", level: "85%" },
+    { icon: <FaServer />, name: "Backup & Restore", level: "90%" },
     { icon: <FaHtml5 />, name: "HTML & CSS", level: "75%" },
     { icon: <FaLinux />, name: "Linux Administration", level: "90%" },
     { icon: <FaFileExcel />, name: "Microsoft Excel", level: "90%" },
     { icon: <FaLightbulb />, name: "Problem Solving", level: "95%" },
-    { icon: <FaClock />, name: "Time Management", level: "90%" },
+    { icon: <FaClock />, name: "Time Management", level: "95%" },
     { icon: <FaTools />, name: "Production Support", level: "90%" }
   ];
 
