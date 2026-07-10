@@ -1,52 +1,43 @@
+import { useState } from "react";
+import "./Home.css";
+
 function Home({ darkMode, setDarkMode }) {
+  const [menuOpen, setMenuOpen] = useState(false);
 
- const scrollToSection = (id) => {
-  const section = document.getElementById(id);
+  const scrollToSection = (id) => {
+    const section = document.getElementById(id);
 
-  if (!section) return;
+    if (!section) return;
 
-  const nav = document.querySelector("nav");
-  const navHeight = nav ? nav.offsetHeight : 0;
+    const nav = document.querySelector("nav");
+    const navHeight = nav ? nav.offsetHeight : 0;
 
-  const y = section.offsetTop - navHeight - 10;
+    const y = section.offsetTop - navHeight - 10;
 
-  window.scrollTo({
-    top: y,
-    behavior: "smooth",
-  });
-};
+    window.scrollTo({
+      top: y,
+      behavior: "smooth",
+    });
 
+    // Close mobile menu after clicking an item
+    setMenuOpen(false);
+  };
 
   return (
-    <nav
-      style={{
-        position: "fixed",
-        top: 0,
-        left: 0,
-        width: "100%",
-        backgroundColor: "#0f172a",
-        color: "white",
-        display: "flex",
-        justifyContent: "space-around",
-        alignItems: "center",
-        padding: "15px 50px",
-        zIndex: 1000,
-        boxShadow: "0 2px 10px rgba(0,0,0,0.3)"
-      }}
-    >
+    <nav className="navbar">
 
-      <h2 style={{ color: "white" }}>
-        Ramkumar
-      </h2>
+      <h2 className="logo">Ramkumar</h2>
 
-      <ul
-        style={{
-          display: "flex",
-          listStyle: "none",
-          gap: "30px",
-          cursor: "pointer"
-        }}
+      {/* Hamburger icon - visible below 720px */}
+      <button
+        className="menu-icon"
+        onClick={() => setMenuOpen(!menuOpen)}
       >
+        {menuOpen ? "✕" : "☰"}
+      </button>
+
+      {/* Navigation Menu */}
+      <ul className={`nav-menu ${menuOpen ? "active" : ""}`}>
 
         <li onClick={() => scrollToSection("about")}>
           Home
@@ -71,15 +62,8 @@ function Home({ darkMode, setDarkMode }) {
       </ul>
 
       <button
+        className="dark-mode-button"
         onClick={() => setDarkMode(!darkMode)}
-        style={{
-          padding: "10px 20px",
-          borderRadius: "8px",
-          cursor: "pointer",
-          border: "none",
-          background: "#2563eb",
-          color: "white"
-        }}
       >
         {darkMode ? "☀ Light" : "🌙 Dark"}
       </button>

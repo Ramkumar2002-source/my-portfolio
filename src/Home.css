@@ -1,0 +1,117 @@
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: #0f172a;
+  color: white;
+
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+
+  padding: 15px 50px;
+
+  z-index: 1000;
+
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+
+  box-sizing: border-box;
+}
+
+.logo {
+  color: white;
+}
+
+.nav-menu {
+  display: flex;
+  list-style: none;
+  gap: 30px;
+  cursor: pointer;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-menu li:hover {
+  color: #60a5fa;
+}
+
+.dark-mode-button {
+  padding: 10px 20px;
+  border-radius: 8px;
+  cursor: pointer;
+  border: none;
+  background: #2563eb;
+  color: white;
+}
+
+/* Hide hamburger icon on desktop */
+
+.menu-icon {
+  display: none;
+  background: none;
+  border: none;
+  color: white;
+  font-size: 28px;
+  cursor: pointer;
+}
+
+
+/* Mobile Screen */
+
+@media (max-width: 720px) {
+
+  .navbar {
+    justify-content: space-between;
+    padding: 15px 20px;
+  }
+
+  /* Show hamburger icon */
+
+  .menu-icon {
+    display: block;
+  }
+
+  /* Hide menu by default */
+
+  .nav-menu {
+    display: none;
+
+    position: absolute;
+
+    top: 100%;
+    left: 0;
+
+    width: 100%;
+
+    background-color: #0f172a;
+
+    flex-direction: column;
+
+    align-items: center;
+
+    gap: 0;
+
+    padding: 10px 0;
+  }
+
+  /* Show menu when hamburger is clicked */
+
+  .nav-menu.active {
+    display: flex;
+  }
+
+  .nav-menu li {
+    width: 100%;
+    text-align: center;
+    padding: 15px 0;
+  }
+
+  .nav-menu li:hover {
+    background-color: #1e293b;
+  }
+
+  .dark-mode-button {
+    padding: 8px 12px;
+  }
+}
