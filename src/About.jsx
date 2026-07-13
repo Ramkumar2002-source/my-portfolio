@@ -84,7 +84,7 @@ function About() {
         </div>
 <div className="resume-buttons">
   <a
-    href="my-portfolio/dist/Ramkumar_Resume.pdf"
+    href="/Ramkumar_Resume.pdf"
     download
     className="resume-btn"
   >
@@ -92,7 +92,7 @@ function About() {
   </a>
 
   <a
-    href="/my-portfolio/dist/Ramkumar_Resume.pdf"
+    href="/Ramkumar_Resume.pdf"
     target="_blank"
     rel="noopener noreferrer"
     className="resume-btn view-btn"
